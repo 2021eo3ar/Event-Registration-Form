@@ -1,0 +1,116 @@
+/* EventRegistrationForm.css */
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    max-width: 400px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   flex-direction: column;
+  }
+  
+  .form:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    position: relative;
+    opacity: 0;
+    animation: fadeInUp 0.3s forwards;
+  }
+  
+  .form-group:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .form-group:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .form-group:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  .form-group:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  .form-group:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+  }
+  
+  .form-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .form-input-error {
+    border-color: #e74c3c;
+  }
+  
+  .form-checkbox-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-checkbox {
+    margin-left: 10px;
+  }
+  
+  .form-error {
+    color: #e74c3c;
+    font-size: 0.8em;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+  }
+  
+  .form-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-button:hover {
+    background-color: #0056b3;
+  }
+  
